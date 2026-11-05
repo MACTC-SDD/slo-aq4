@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--
+  DESIGN BRIEF: Maple Street Bakery order page
+
+  The client approved the five requirements below.
+  The page you were given does not match all of them.
+
+  1. Sidebar width.
+     The sidebar should always take up exactly one-third of the page width,
+     no matter how wide the browser window is.
+
+  2. Header color.
+     The header background should be a mid-tone gray, about halfway
+     between black and white.
+
+  3. Order button shape.
+     The "Order Now" button in the product card should be exactly
+     twice as wide as it is tall.
+
+  4. Card size.
+     The product card should be exactly 300 pixels wide in total,
+     including its padding and border.
+
+  5. Size field.
+     The size field should only accept one of three fixed choices:
+     Small, Medium, or Large.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple Street Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Maple Street Bakery</h1>
+  </header>
+
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <h2>Explore</h2>
+        <ul>
+          <li>Today's Menu</li>
+          <li>Hours</li>
+          <li>Catering</li>
+          <li>About Us</li>
+        </ul>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="main-inner">
+
+        <h2>Today's Special</h2>
+        <article class="card">
+          <h3>Cinnamon Roll</h3>
+          <p class="price">$3.50</p>
+          <p>Soft, warm, and topped with cream cheese icing.</p>
+          <button type="button" class="order-button">Order Now</button>
+        </article>
+
+        <h2>Place an Order</h2>
+        <form class="order-form" action="#" method="post">
+          <label for="customer-name">Name</label>
+          <input type="text" id="customer-name" name="customer-name">
+
+          <label for="quantity">Quantity</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="12" value="1">
+
+          <label for="size">Size</label>
+          <input type="text" id="size" name="size">
+
+          <input type="submit" value="Place Order" class="submit-button">
+        </form>
+
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
